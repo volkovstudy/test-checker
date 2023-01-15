@@ -1,10 +1,10 @@
 #include <iostream>
+#include "program-launcher/ProgramLauncher.h"
 
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    ProgramLauncher::run(cin, cout);
 
     return 0;
 }
