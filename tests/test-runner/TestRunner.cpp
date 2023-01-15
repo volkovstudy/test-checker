@@ -9,6 +9,10 @@ void testProgramLauncher();
 
 void TestRunner::runAllTests() {
     testTestsStack();
+
+    clog << endl;
+
+    testProgramLauncher();
 }
 
 void testTestsStack() {
