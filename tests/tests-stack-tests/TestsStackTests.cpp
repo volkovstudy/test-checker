@@ -14,3 +14,19 @@ void TestsStackTests::testPushingTop() {
 
     clog << "Test passed: testing pushing top" << endl;
 }
+
+void TestsStackTests::testPushingBottom() {
+    clog << "Running test: testing pushing bottom" << endl;
+
+    TestsStack testsStack;
+
+    testsStack.pushBottom("Bob");
+    testsStack.pushBottom("Alex");
+
+    // Should be {"Alex", "Bob"}
+
+    assert(testsStack.getIndexOf("Bob") == 1);
+    assert(testsStack.getIndexOf("Alex") == 0);
+
+    clog << "Test passed: testing pushing bottom" << endl;
+}
