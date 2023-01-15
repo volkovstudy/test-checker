@@ -9,7 +9,7 @@ using namespace std;
 class TestsStack {
 public:
     void pushTop(const string& student);
-    void pushBottom(string student);
+    void pushBottom(const string& student);
 
     string getIndexOf(string student);
 private:
