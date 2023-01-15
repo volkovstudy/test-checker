@@ -1,0 +1,10 @@
+#ifndef TEST_CHECKER_PROGRAMLAUNCHERTESTS_H
+#define TEST_CHECKER_PROGRAMLAUNCHERTESTS_H
+
+
+class ProgramLauncherTests {
+
+};
+
+
+#endif
