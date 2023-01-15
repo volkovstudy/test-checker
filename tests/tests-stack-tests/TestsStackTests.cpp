@@ -9,6 +9,8 @@ void TestsStackTests::testPushingTop() {
     testsStack.pushTop("Bob");
     testsStack.pushTop("Alex");
 
+    // Should be {"Bob", "Alex"}
+
     assert(testsStack.getIndexOf("Bob") == 0);
     assert(testsStack.getIndexOf("Alex") == 1);
 
