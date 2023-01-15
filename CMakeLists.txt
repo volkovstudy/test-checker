@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(test-checker
         src/main.cpp
         src/tests-stack/TestsStack.h src/tests-stack/TestsStack.cpp
+        src/program-launcher/ProgramLauncher.h src/program-launcher/ProgramLauncher.cpp
 )
 
 ### TESTING ###
@@ -17,4 +18,5 @@ add_executable(test-executable
         tests/tests-stack-tests/TestsStackTests.h tests/tests-stack-tests/TestsStackTests.cpp
 
         src/tests-stack/TestsStack.h src/tests-stack/TestsStack.cpp
+        src/program-launcher/ProgramLauncher.h src/program-launcher/ProgramLauncher.cpp
 )
