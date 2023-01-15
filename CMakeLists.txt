@@ -14,6 +14,7 @@ enable_testing()
 add_executable(test-executable
         tests/main.cpp
         tests/test-runner/TestRunner.cpp tests/test-runner/TestRunner.h
+        tests/tests-stack-tests/TestsStackTests.h tests/tests-stack-tests/TestsStackTests.cpp
 
         src/tests-queue/TestsStack.h src/tests-queue/TestsStack.cpp
 )
