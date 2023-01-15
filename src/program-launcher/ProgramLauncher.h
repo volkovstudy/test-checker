@@ -6,7 +6,7 @@
 
 class ProgramLauncher {
 public:
-    static TestsStack& fillStackByReadingDataFromStream(istream& input, int size);
+    static TestsStack& fillStackByReadingDataFromStream(istream& input);
 };
 
 
