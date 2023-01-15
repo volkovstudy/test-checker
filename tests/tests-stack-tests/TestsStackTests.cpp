@@ -32,3 +32,19 @@ void TestsStackTests::testPushingBottom() {
 
     clog << "Test passed: testing pushing bottom" << endl;
 }
+
+void TestsStackTests::testGettingByIndex() {
+    clog << "Running test: getting by index" << endl;
+
+    TestsStack testsStack;
+
+    testsStack.pushTop("Bob");
+    testsStack.pushTop("Alex");
+
+    // Should be {"Bob", "Alex"} => "Bob" = 0, "Alex" = 1
+
+    assert(testsStack.getByIndex(0) == "Bob");
+    assert(testsStack.getByIndex(1) == "Alex");
+
+    clog << "Test passed: getting by index" << endl;
+}

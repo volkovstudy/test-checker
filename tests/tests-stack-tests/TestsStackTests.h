@@ -8,6 +8,7 @@ class TestsStackTests {
 public:
     static void testPushingTop();
     static void testPushingBottom();
+    static void testGettingByIndex();
 };
 
 
