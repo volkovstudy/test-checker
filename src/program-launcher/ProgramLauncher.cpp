@@ -1,12 +1,11 @@
 #include "ProgramLauncher.h"
 
+int readIntFromStream(istream& input);
+
 TestsStack& ProgramLauncher::fillStackByReadingDataFromStream(istream& input) {
     auto* testsStack = new TestsStack();
 
-    string sizeInput;
-    input >> sizeInput;
-
-    int size = stoi(sizeInput);
+    int size = readIntFromStream(input);
 
     for (int i = 0; i < size; ++i) {
         string student;
@@ -27,4 +26,11 @@ TestsStack& ProgramLauncher::fillStackByReadingDataFromStream(istream& input) {
     }
 
     return *testsStack;
+}
+
+int readIntFromStream(istream& input) {
+    string value;
+    input >> value;
+
+    return stoi(value);
 }
