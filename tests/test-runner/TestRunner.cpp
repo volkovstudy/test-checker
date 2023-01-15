@@ -5,6 +5,7 @@
 void testTestsStack();
 
 void TestRunner::runAllTests() {
+    testTestsStack();
 }
 
 void testTestsStack() {
