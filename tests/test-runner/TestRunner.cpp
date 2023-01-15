@@ -29,4 +29,8 @@ void testTestsStack() {
 
 void testProgramLauncher() {
     ProgramLauncherTests::testFillingStack();
+
+    clog << endl;
+
+    ProgramLauncherTests::testFindingStudents();
 }
