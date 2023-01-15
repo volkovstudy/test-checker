@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(test-checker
         src/main.cpp
-        src/tests-queue/TestsQueue.h src/tests-queue/TestsQueue.cpp
+        src/tests-queue/TestsStack.h src/tests-queue/TestsStack.cpp
 )
 
 ### TESTING ###
@@ -15,5 +15,5 @@ add_executable(test-executable
         tests/main.cpp
         tests/test-runner/TestRunner.cpp tests/test-runner/TestRunner.h
 
-        src/tests-queue/TestsQueue.h src/tests-queue/TestsQueue.cpp
+        src/tests-queue/TestsStack.h src/tests-queue/TestsStack.cpp
 )
