@@ -35,6 +35,7 @@ vector<string> ProgramLauncher::findStudentsTestsInStack(istream& input, TestsSt
 
     for (int i = 0; i < m; ++i) {
         int stackIndex = readIntFromStream(input);
+        stackIndex -= 1; // Because input isn't programmers (wrong - 0,1,2,3, correct 1,2,3,4)
 
         string student = testsStack.getByIndex(stackIndex);
 
