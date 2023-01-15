@@ -36,6 +36,24 @@ void ProgramLauncherTests::testFindingStudents() {
     clog << "Test passed: finding students by input data" << endl;
 }
 
+void ProgramLauncherTests::testRunningProgram() {
+    clog << "Running test: running program" << endl;
+
+    stringstream& studentsInput = getInputWithTopStudents({"Alex", "Bob", "Steve"});
+    stringstream& findingInput = getInputWithFindingStudents({1, 2});
+
+    stringstream input;
+    input << studentsInput.str() << findingInput.str();
+
+    stringstream output;
+
+    ProgramLauncher::run(input, output);
+
+    assert(output.str() == "Bob\nSteve\n");
+
+    clog << "Test passed: running program" << endl;
+}
+
 stringstream& getInputWithTopStudents(const vector<string>& students) {
     auto* input = new stringstream();
 
