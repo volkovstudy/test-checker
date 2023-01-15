@@ -33,4 +33,8 @@ void testProgramLauncher() {
     clog << endl;
 
     ProgramLauncherTests::testFindingStudents();
+
+    clog << endl;
+
+    ProgramLauncherTests::testRunningProgram();
 }
