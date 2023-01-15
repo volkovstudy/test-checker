@@ -21,3 +21,5 @@ add_executable(test-executable
         src/tests-stack/TestsStack.h src/tests-stack/TestsStack.cpp
         src/program-launcher/ProgramLauncher.h src/program-launcher/ProgramLauncher.cpp
 )
+
+add_test(program-test test-executable)
