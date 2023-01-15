@@ -12,8 +12,6 @@ public:
     void pushBottom(string student);
 
     string getIndexOf(string student);
-
-    vector<string>& getStack();
 private:
     vector<string> _stack;
 };
