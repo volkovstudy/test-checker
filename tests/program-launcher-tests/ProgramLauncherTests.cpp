@@ -25,7 +25,7 @@ void ProgramLauncherTests::testFindingStudents() {
     clog << "Running test: finding students by input data" << endl;
 
     TestsStack testsStack = givenStackWithTopStudents({"Alex", "Bob", "Steve"});
-    stringstream& input = getInputWithFindingStudents({1, 2});
+    stringstream& input = getInputWithFindingStudents({2, 3});
 
     vector<string> result = ProgramLauncher::findStudentsTestsInStack(input, testsStack);
 
@@ -40,7 +40,7 @@ void ProgramLauncherTests::testRunningProgram() {
     clog << "Running test: running program" << endl;
 
     stringstream& studentsInput = getInputWithTopStudents({"Alex", "Bob", "Steve"});
-    stringstream& findingInput = getInputWithFindingStudents({1, 2});
+    stringstream& findingInput = getInputWithFindingStudents({2, 3});
 
     stringstream input;
     input << studentsInput.str() << findingInput.str();
