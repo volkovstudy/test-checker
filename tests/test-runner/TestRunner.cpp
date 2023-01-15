@@ -21,6 +21,10 @@ void testTestsStack() {
     clog << endl;
 
     TestsStackTests::testPushingBottom();
+
+    clog << endl;
+
+    TestsStackTests::testGettingByIndex();
 }
 
 void testProgramLauncher() {
