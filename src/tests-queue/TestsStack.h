@@ -8,7 +8,7 @@ using namespace std;
 
 class TestsStack {
 public:
-    void pushTop(string student);
+    void pushTop(const string& student);
     void pushBottom(string student);
 
     string getIndexOf(string student);
