@@ -12,6 +12,7 @@ public:
     void pushBottom(const string& student);
 
     int getIndexOf(const string& student);
+    string getByIndex(int index);
 private:
     vector<string> _stack;
 };

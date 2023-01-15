@@ -20,3 +20,7 @@ int TestsStack::getIndexOf(const string& student) {
 
     throw invalid_argument("Didn't find student in the stack");
 }
+
+string TestsStack::getByIndex(int index) {
+    return _stack.at(index);
+}
