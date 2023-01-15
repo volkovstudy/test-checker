@@ -49,7 +49,7 @@ void ProgramLauncherTests::testRunningProgram() {
 
     ProgramLauncher::run(input, output);
 
-    assert(output.str() == "Bob\nSteve\n");
+    assert(output.str() == "Steve\nBob\n");
 
     clog << "Test passed: running program" << endl;
 }
