@@ -7,6 +7,7 @@
 class ProgramLauncher {
 public:
     static TestsStack& fillStackByReadingDataFromStream(istream& input);
+    static vector<string> findStudentsTestsInStack(istream& input, TestsStack& testsStack);
 };
 
 

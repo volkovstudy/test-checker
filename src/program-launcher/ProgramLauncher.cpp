@@ -28,6 +28,21 @@ TestsStack& ProgramLauncher::fillStackByReadingDataFromStream(istream& input) {
     return *testsStack;
 }
 
+vector<string> ProgramLauncher::findStudentsTestsInStack(istream& input, TestsStack& testsStack) {
+    vector<string> result;
+    int m = readIntFromStream(input);
+
+    for (int i = 0; i < m; ++i) {
+        int stackIndex = readIntFromStream(input);
+
+        string student = testsStack.getByIndex(stackIndex);
+
+        result.push_back(student);
+    }
+
+    return result;
+}
+
 int readIntFromStream(istream& input) {
     string value;
     input >> value;
