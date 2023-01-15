@@ -11,6 +11,7 @@ public:
     void pushTop(string student);
     void pushBottom(string student);
 
+    vector<string>& getStack();
 private:
     vector<string> _stack;
 };
