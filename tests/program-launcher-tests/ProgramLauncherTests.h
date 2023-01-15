@@ -7,6 +7,7 @@
 class ProgramLauncherTests {
 public:
     static void testFillingStack();
+    static void testFindingStudents();
 };
 
 
