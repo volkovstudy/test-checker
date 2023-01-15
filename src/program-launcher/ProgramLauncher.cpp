@@ -50,7 +50,10 @@ void ProgramLauncher::run(istream& input, ostream& output) {
 
     vector<string> students = ProgramLauncher::findStudentsTestsInStack(input, testsStack);
 
-    for (const string& student: students) {
+    // Reverse because of checking tests is starting from top of stack
+    for (int i = (int) students.size() - 1; i >= 0; --i) {
+        string student = students.at(i);
+
         output << student << endl;
     }
 }
