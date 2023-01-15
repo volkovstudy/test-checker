@@ -1,3 +1,4 @@
+#include <iostream>
 #include "ProgramLauncher.h"
 
 int readIntFromStream(istream& input);
@@ -41,6 +42,16 @@ vector<string> ProgramLauncher::findStudentsTestsInStack(istream& input, TestsSt
     }
 
     return result;
+}
+
+void ProgramLauncher::run(istream& input, ostream& output) {
+    TestsStack testsStack = ProgramLauncher::fillStackByReadingDataFromStream(input);
+
+    vector<string> students = ProgramLauncher::findStudentsTestsInStack(input, testsStack);
+
+    for (const string& student: students) {
+        output << student << endl;
+    }
 }
 
 int readIntFromStream(istream& input) {

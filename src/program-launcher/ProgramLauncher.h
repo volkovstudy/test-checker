@@ -6,6 +6,7 @@
 
 class ProgramLauncher {
 public:
+    static void run(istream& input, ostream& output);
     static TestsStack& fillStackByReadingDataFromStream(istream& input);
     static vector<string> findStudentsTestsInStack(istream& input, TestsStack& testsStack);
 };
